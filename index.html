@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>Smart Watch</title>
+</head>
+<body>
+    <section class="banner">
+        <header>
+            <a href="#" class="logo">Watch</a>
+            <div class="toggle" onclick="toggle();"></div>
+        </header>
+        <div class="content">
+            <div class="content-box">
+                <h2>Future on<br>your Hand.</h2>
+                <p>Experience the future now: our sleek new smartwatch seamlessly blends style and innovation. Manage calls, messages, and health tracking with ease. Elevate your lifestyle today on our e-commerce platform.</p>
+                <a href="#">Buy Now</a>
+            </div>
+            <div-img-box>
+                <img src="./images/watch.png" alt="">
+            </div-img-box>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        function toggle(){
+            const toggle = document.querySelector('.toggle');
+            const banner = document.querySelector('.banner');
+            toggle.classList.toggle('active')
+            banner.classList.toggle('active')
+        }
+    </script>
+</body>
+</html>
